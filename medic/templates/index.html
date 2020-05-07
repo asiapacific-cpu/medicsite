@@ -1,0 +1,519 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="en">
+
+<!-- Mirrored from demo.hasthemes.com/curex-preview/curex/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Apr 2020 18:07:43 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+     {% if title %}
+        <title>{{ title}} </title>
+    {% else %}
+        <title> asiapacificequipments </title>
+    {% endif %}
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+  {% include 'head_css.html' %}
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->  
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper">
+        <!-- Start Header Style -->
+        <header class="htc__header">
+            <!-- Start Header Top Area -->
+            <div class="htc__header__top">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-8 col-12">
+                            <div class="ht__header__top__left">
+                                <p><span><i class="zmdi zmdi-phone"></i></span>+61 4888 75984 </p>
+                                <p><span><i class="zmdi zmdi-alarm-check"></i></span>Mon to Sat 07 am to 12 am</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-12">
+                            <div class="ht__header__top__right">
+                                <div class="social_icon">
+<!--                                    <a href="#"><i class="zmdi zmdi-twitter"></i></a>-->
+<!--                                    <a href="#"><i class="zmdi zmdi-pinterest"></i></a>-->
+                                    <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                                    <a href="#"><i class="zmdi zmdi-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Top Area -->
+
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-7">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="{% static 'images/logo/AsiaPacificLogo.png' %}" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-lg-9 d-none d-lg-block">
+                            <nav class="main__menu__nav ">
+                                <ul class="main__menu">
+                                    <li class="drop"><a href="{% url 'dashboard' %}">Home</a></li>
+                                    <li class="drop"><a href="{% url 'about-us' %}">About</a></li>
+                                    <li class="drop">
+                                        <a href="{% url 'products'%}">Products</a>
+                                    </li>
+                                    <li class="drop"><a href="{% url 'contact-us'%}">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                       
+                        <div class="col-12">
+                            <div class="mobile-menu d-lg-none">
+                                <nav>
+                                    <ul>
+                                        <li class="drop"><a href="{% url 'dashboard' %}">Home</a></li>
+                                        <li class="drop"><a href="{% url 'about-us' %}"> About</a></li>
+                                        <li class="drop"><a href="{% url 'products'%}">Product</a></li>
+                                        <li class="drop"><a href="{% url 'contact-us'%}">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Mainmenu Area -->
+        </header>
+        <!-- End Header Style -->
+        {% block content %}
+        <!-- slider-area-start -->
+		<div class="slider__container">
+			<div class="slider-active owl-carousel">
+				<div class="slider-wrapper bg-opacity" style="background-image:url({% static 'images/slider/ventilator.png' %})">
+					<div class="container">
+						<div class="row">
+						    <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="slider-content slider-text-animation">
+                                    <h2>Ventilators</h2>
+                                    <a href="contact-us.html">Contact Us</a>									
+                                </div>
+                            </div>
+						</div>	
+					</div>
+				</div>
+				<div class="slider-wrapper bg-opacity " style="background-image:url({% static 'images/slider/coverall.png' %})">
+					<div class="container">
+				        <div class="row">
+						    <div class="col-md-12 col-sm-12 col-xs-12">
+						        <div class="slider-content slider-text-animation">
+                                    <h1>Protective</h1>
+                                    <h2>Coverall</h2>
+                                    <a href="contact-us.html">Contact Us</a>									
+                                </div>
+						    </div>
+						</div>	
+					</div>
+				</div>
+				<div class="slider-wrapper bg-opacity thrid_slide" style="background-image:url({% static 'images/slider/face-mask.png' %})">
+					<div class="container">
+						<div class="row">
+						    <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="slider-content slider-text-animation">
+                                    <h1>face</h1>
+                                    <h2>Mask</h2>
+                                    <a href="contact-us.html">Contact Us</a>									
+                                </div>
+                            </div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- slider-area-end -->
+       
+        <!-- Start Support Area -->
+        <section class="htc__support__area ptb--100 bg__white">
+            <div class="container">
+                <div class="row">
+                    <div class="htc__support__wrap clearfix">
+                        <div class="about__right_image">
+                            <img src="{% static 'images/about/h_about-3.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-7 col-sm-12 col-12">
+                            <div class="htc__support__content">
+                                <div class="htc__support__inner">
+                                    <h4 class="text--theme">About...</h4>
+                                    <h2 class="text--theme">Health is the root of <br>  all happiness</h2>
+                                    <div class="htc__support__details">
+                                        <p>Our technological expertise, the high quality of our products and services and our global presence make Lorderan a
+                                        preferred partner of the pharmaceutical, biotech, chemical, and food and beverage industries.</p>
+                                    </div>
+                                    <div class="htc__spt__dai">
+                                        <div class="play_video">
+                                            <a href="https://www.youtube.com/watch?v=KeKNjVg22pc"><i class="zmdi zmdi-play"></i></a>
+                                            <span>Play This Video</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Support Area -->
+
+        <!-- Start Try Solve Area -->
+        <section class="htc__try__solve__area">
+            <div class="container-fluid">
+                <div class="home--try" style="background: rgba(0, 0, 0, 0) url({% static 'images/about/3.jpg' %}) no-repeat scroll 0 0 / cover;" >
+                    <div class="htc__try__solveleft">
+                        <div class="htc__try__details">
+                            <div class="try_solve_middle_inner">
+                                <h2>Happiness is nothing more than good health and a bad memory.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="row">
+                    <div class="offset-lg-5 col-lg-7 col-md-12 col-12">
+                        <div class="htc__solve__items">
+                            <div class="htc__solve__content p-b-30">
+                                <!-- Start Single Items -->
+                                <div class="ht__sin__solve">
+                                    <div class="ser_icon">
+                                        <img src="{% static 'images/portfolio/project/ventilator.png' %}" alt="services Icon">
+                                    </div>
+                                    <div class="ser__content">
+                                        <h4><a href="ventilator.html">Ventilator</a></h4>
+                                        <p>Modern ventilators are computerized microprocessor controlled machines that provides mechanical ventilation by moving breathable air into and out of the lungs, to
+                                        deliver breaths to a patient who is physically unable to breathe, or breathing insufficiently</p>
+                                    </div>
+                                </div>
+                                <!-- End Single Items -->
+                                <!-- Start Single Items -->
+                                <div class="ht__sin__solve">
+                                    <div class="ser_icon">
+                                        <img src="{% static 'images/portfolio/project/face-mask.png' %}" alt="services Icon">
+                                    </div>
+                                    <div class="ser__content">
+                                        <h4><a href="mask.html">Face Mask</a></h4>
+                                        <p>Not all masks are the same. Every day you put yourself at risk to ensure your patients are cared for. Make sure you are
+                                        taking care of yourself as well by selecting the proper mask.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Items -->
+                            <div class="htc__solve__content">
+                                <!-- Start Single Items -->
+                                <div class="ht__sin__solve">
+                                    <div class="ser_icon">
+                                        <img src="{% static 'images/portfolio/project/lab.png' %}" alt="services Icon">
+                                    </div>
+                                    <div class="ser__content">
+                                        <h4><a href="eyes.html">Eye Protection</a></h4>
+                                        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dantium, totam rem aperiam, eaque</p>
+                                    </div>
+                                </div>
+                                <!-- End Single Items -->
+                                <!-- Start Single Items -->
+                                <div class="ht__sin__solve">
+                                    <div class="ser_icon">
+                                        <img src="{% static 'images/portfolio/project/suit.png' %}" alt="services Icon">
+                                    </div> 
+                                    <div class="ser__content">
+                                        <h4><a href="coverall.html">Protective Coverall</a></h4>
+                                        <p>Soft and flexible microporous PE film laminate fabric – the best Type 5 & 6 protection in a competitively priced
+                                        coverall with Lakeland’s superior features such as the Super-B style pattern.</p>
+                                    </div>
+                                </div>
+                                <!-- End Single Items -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Try Solve Area -->
+
+        <!-- Start Gallery Area -->
+        <section class="htc__gallery__area gallery--1 pt--100 pb--70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section__title text-center pb--50">
+                            <h2 class="title__line text--theme">Our Products</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                   
+                    <!-- Start Single Gallery -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="singel_project mb--30">
+                            <div class="project_img">
+                                <a href="ventilator.html">
+                                    <img src="{% static 'images/portfolio/project/vent.png' %}" alt="Cardiology Icon" style="width: 370px;height: 320px;">
+                                </a>
+                            </div>
+                            <div class="project_content">
+                                <h3><img src="{% static 'images/portfolio/project/ventilator.png'%}" alt="Cardiology Dept" class="m-h-25"><a href="ventilator.html">Ventilator</a></h3>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="singel_project mb--30">
+                            <div class="project_img">
+                                <a href="mask.html">
+                                    <img src="{% static 'images/portfolio/project/mask.png' %}" alt="Cardiology Dept" style="width: 370px;height: 320px;">
+                                </a>
+                            </div>
+                            <div class="project_content">
+                                <h3><img src="{% static 'images/portfolio/project/face-mask.png' %}" alt="Cardiology icon" class="m-h-25"><a href="mask.html">Face Mask</a></h3>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="singel_project mb--30">
+                            <div class="project_img">
+                                <a href="eye.html">
+                                    <img src="{% static 'images/portfolio/project/eye.png' %}" alt="Cardiology Icon" style="width: 370px;height: 320px;">
+                                </a>
+                            </div>
+                            <div class="project_content">
+                                <h3><img src="{% static 'images/portfolio/project/lab.png' %}" alt="Cardiology Dept" class="m-h-25"><a href="eye.html">Eye Protection</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container m-t-30">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="ht__appoin__btn">
+                                    <button type="submit" href="{% url 'products' %}">View All</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Gallery -->
+                   
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End Gallery Area -->
+
+        <!-- Start Contact Area -->
+        <section class="htc__appoinment__area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-lg-12 col-12">
+                        <div class="section__title text-center">
+                            <h2>Get In Touch</h2>
+                        </div>
+                        <div class="htc__appoinment__wrap">
+                            <div class="htc__appoinment__form">
+                               <form id="contact-form" action="/contact-us'" method="post">
+                                    {% csrf_token %}
+                                    <div class="htc__app__box__inner">
+                                        <div class="htc__app__box">
+                                            <div class="input_inner">
+                                                <input type="text" name="name"  placeholder="Type Your Full Name">
+                                            </div>
+                                        </div>
+                                     </div>
+                                    <div class="htc__app__box__inner">
+                                        <div class="htc__app__box">
+                                            <input type="phonenumber" placeholder="Type Your Phone Number" name="phonenumber">
+                                        </div>
+                                    </div>
+                                    <div class="htc__app__box__inner">
+                                        <div class="htc__app__box">
+                                            <input type="email" placeholder="Type Your E-mail" name="email">
+                                        </div>
+                                    </div>
+
+<!--                                    <div class="htc__app__box__inner">-->
+<!--                                        -->
+<!--                                        <div class="htc__app__box doctor_select">-->
+<!--                                            <div class="doctor_select_inner">-->
+<!--                                                <select>-->
+<!--                                                    <option value="1" selected> Catergories</option>-->
+<!--                                                    <option value="2" >Ventilators </option>-->
+<!--                                                    <option value="3" >Personal Protective </option>-->
+<!--                                                    <option value="4" >Medical disposable / Test Kits</option>-->
+<!--                                                    <option value="5" >Hospital Furnitures </option>-->
+
+<!--                                                </select>-->
+<!--                                            </div>-->
+<!--                                        </div> -->
+<!--                                        <div class="htc__app__box doctor_select">-->
+<!--                                            <div class="doctor_select_inner">-->
+<!--                                                <select>-->
+<!--                                                    <option value="1" selected>Select Doctor</option>-->
+<!--                                                    <option value="2" >Dr. Christine Roberts</option>-->
+<!--                                                    <option value="3" >Dr. Jacob Torres</option>-->
+<!--                                                    <option value="4" >Dr. Diane Guerrero</option>-->
+<!--                                                    <option value="5" >Dr. Justin Howard</option>-->
+<!--                                                </select>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+                                    <div class="appoinment_message">
+                                        <div class="htc__app__box message">
+                                           <textarea name="Message" name="message"  placeholder="Type Additional Message"></textarea>
+                                        </div>
+                                        <div class="ht__appoin__btn">
+                                            <button type="submit">Send Request</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>                            
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Area -->
+
+        <!-- Start Subscribe Area -->
+        <section class="htc__subscribe__area subscribe--transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="htc__subscribe__inner">
+                            <div class="newsletter_section_title">
+                                <h2 class="text-theme">Subscribe Email</h2>
+                                <h4>Get our latest news & update regularly</h4>
+                            </div>
+                            <div class="newsletter__form">
+                                <div class="input__box">
+                                    <form action="#">
+                                        <div class="input_email_inner">
+                                            <input type="email" placeholder="Type Email Address">
+                                        </div>
+                                        <button type="submit">Subscribe</button>
+                                    </form>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Subscribe Area -->
+{% endblock content %}
+        <!-- Start Footer Area -->
+        <footer class="footer_area">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 p-0 d-flex">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_footer widget footer_1">
+                                    <div class="single_footer_title">
+                                        <h2>Links</h2>
+                                    </div>
+                                    <div class="single_footer_menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about-us.html">About</a></li>
+                                            <li><a href="product.html">Product</a></li>
+                                            <li><a href="contact-us.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_footer widget footer_2">
+                                    <div class="single_footer_title">
+                                        <h2>Products</h2>
+                                    </div>
+                                    <div class="single_footer_menu">
+                                        <ul>
+                                            <li><a href="mask.html">Face Mask</a></li>
+                                            <li><a href="ventilator.html">Ventilators</a></li>
+                                            <li><a href="gloves.html"> Gloves</a></li>
+                                            <li><a href="eye.html">Eye Protection</a></li>
+                                            <li><a href="coverall.html">Coverall</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 p-0 d-flex">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_footer widget footer_3 ">
+                                    <div class="single_footer_title">
+                                        <h2>Address Headquarters</h2>
+                                    </div>
+                                    <div class="single_footer_desc">
+                                        <p>2003, 20/F, Tower 5, China Hong Kong City, 33 Canton Rd, Tsim Sha Tsui, Hong Kong</p>
+                                        <p>+61 4888 75984 </p>
+                                        <p> info@asiapacificequipments.com <br> www.asiapacificequipments.com </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_footer widget footer_4">
+                                    <div class="single_footer_title">
+                                        <h2>Address Operational Office</h2>
+                                    </div>
+                                    <div class="single_footer_desc">
+                                        <p>Unit 1613, South Tower Guangzhou World Trade Center 371-375 Huanshi East Road
+                                            Guangzhou Guangdong 510095
+                                            China</p>
+                                        <p>+61 4888 75994 </p>
+<!--                                        <p>info@asiapacificequipments.com </p>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="copyright__content">
+                                <div class="copyright__inner">
+                                    <p>Copyright © <a href="www.asiapacificequipments.com">asiapacific</a> All Rights Reserves </p>
+                                </div>
+                                <div class="social__icon">
+<!--                                    <a href="#"><i class="zmdi zmdi-twitter"></i></a>-->
+<!--                                    <a href="#"><i class="zmdi zmdi-pinterest"></i></a>-->
+                                    <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                                    <a href="#"><i class="zmdi zmdi-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright Area -->
+        </footer>
+        <!-- End Footer Area -->
+        
+        
+    </div>
+    <!-- Body main wrapper end -->
+    {% include 'javascript.html' %}
+
+</body>
+
+
+
+</html>
